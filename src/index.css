@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+body {
+    background-color: rgb(255, 247, 226);
+}
+
+
+/* ================================
+   📱 Default (Mobile First)
+================================ */
+.phoneImage {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.phoneImage .phone {
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    width: 180px;
+    height: auto;
+}
+
+.phoneImage .time {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    width: 110px;
+    height: auto;
+}
+
+.phoneImage .downloads {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-90%);
+    width: 120px;
+}
+
+.phoneImage .arrow1 {
+    position: absolute;
+    top: 85px;
+    left: 100px;
+}
+
+.phoneImage .arrow2 {
+    position: absolute;
+    bottom: 150px;
+    right: 100px;
+}
+
+/* ================================
+   💻 Tablet (min-width: 640px)
+================================ */
+@media (min-width: 640px) {
+
+    .phoneImage {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+    }
+
+    .phoneImage .phone {
+        position: absolute;
+        width: auto;
+        height: auto;
+        top: 50px;
+        right: 5px;
+    }
+
+    .phoneImage .time {
+        position: absolute;
+        top: 220px;
+        left: 30px;
+        width: 150px;
+        height: auto;
+    }
+
+    .phoneImage .downloads {
+        position: absolute;
+        bottom: 80px;
+        right: 270px;
+        width: 140px;
+    }
+
+
+    .phoneImage .arrow1 {
+        position: absolute;
+        top: 150px;
+        left: 150px;
+    }
+
+    .phoneImage .arrow2 {
+        position: absolute;
+        bottom: 110px;
+        right: 170px;
+    }
+}
+
+/* ================================
+   🖥️ Desktop (min-width: 1024px)
+================================ */
+@media (min-width: 1024px) {
+    .phoneImage .phone {
+        top: 50px;
+        right: 5px;
+    }
+
+    .phoneImage .time {
+        top: 220px;
+        left: 30px;
+    }
+
+    .phoneImage .downloads {
+        bottom: 80px;
+        right: 270px;
+    }
+
+    .phoneImage .arrow1 {
+        top: 150px;
+        left: 150px;
+    }
+
+    .phoneImage .arrow2 {
+        bottom: 110px;
+        right: 170px;
+    }
+}
